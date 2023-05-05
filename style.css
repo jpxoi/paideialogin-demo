@@ -275,6 +275,13 @@ form.sign-in-form {
   pointer-events: all;
 }
 
+.validate_DNI, .validate_pswd {
+
+  &:invalid {
+    color: red;
+  }
+}
+
 @media (max-width: 870px) {
   .container {
     min-height: 800px;

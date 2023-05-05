@@ -19,11 +19,11 @@
             <h2 class="title">Bienvenido a PAIDEIA</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input name="username" id="username" type="text" placeholder="Usuario" />
+              <input required name="username" id="username" type="text" placeholder="Usuario" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input name="password" id="password" type="password" placeholder="Contraseña" />
+              <input class="validate_pswd" required name="password" id="password" type="password" placeholder="Contraseña" minlength="8" />
             </div>
             <input type="submit" value="Acceder" class="btn solid" onclick="javascript:Validar()"/>
           </form>
@@ -32,17 +32,17 @@
             <h2 class="title">Regístrate</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Usuario" />
+              <input required type="text" placeholder="Usuario" />
             </div>
             <div class="input-field">
               <i class="fas fa-id-card"></i>
-              <input type="text" placeholder="DNI" />
+              <input class="validate_DNI" required type="text" placeholder="DNI" pattern="[0-9]{8}" title="Your ID must contain 8 characters." minlength="8" maxlength="8"/>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input class="validate_pswd" required type="password" placeholder="Contraseña" minlength="8"/>
             </div>
-            <input type="submit" class="btn" value="Registrarme" />
+            <input type="submit" value="Registrarme" class="btn" onclick="javascript:Validar()"/>
           </form>
         </div>
       </div>
